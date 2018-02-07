@@ -11,21 +11,22 @@ public class Collect : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D other) {
 		SoundManage.instance.PlaySingle (collect);
 		GameManager.AddScore (points);
-
-		StartCoroutine(DelayedLoad());
-	}
-
-	IEnumerator DelayedLoad() {
-		//Play the clip once
-
-
-		//Wait until clip finish playing
-		yield return new WaitForSeconds(collect.length);   
-
-		//Load scene here
+		//StartCoroutine(DelayedLoad());
 		Object.Destroy (gameObject);
 
 	}
+
+//	IEnumerator DelayedLoad() {
+//		//Play the clip once
+//
+//
+//		//Wait until clip finish playing
+//		yield return new WaitForSeconds(collect.length);   
+//
+//		//Load scene here
+//		Object.Destroy (gameObject);
+//
+//	}
 
 
 }

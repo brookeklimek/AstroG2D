@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4816788990979932}
   - component: {fileID: 114650577407435316}
   m_Layer: 9
-  m_Name: Platform-Moving-Switch
+  m_Name: Platform-221
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

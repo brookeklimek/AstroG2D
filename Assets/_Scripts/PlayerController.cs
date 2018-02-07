@@ -42,8 +42,7 @@ public class PlayerController : MonoBehaviour {
 
 		if (Mathf.Abs (x) < .05) {
 			anim.SetBool (moveHash, false);
-		}
-		else {
+		} else {
 			anim.SetBool (moveHash, true);
 		}
 
@@ -54,25 +53,21 @@ public class PlayerController : MonoBehaviour {
 			Vector3 scale = transform.localScale;
 			scale.x = -1 * flip;
 			transform.localScale = scale;
-		}
-		else if (x > 0) {
+		} else if (x > 0) {
 			Vector3 scale = transform.localScale;
 			scale.x = flip;
 			transform.localScale = scale;
 		}
 
-		if (Input.GetKeyDown (KeyCode.Space) && Grounded()) {
+		if (Input.GetKeyDown (KeyCode.Space) && Grounded ()) {
 //		if (CrossPlatformInputManager.GetButtonDown ("Jump") && Grounded()) {
 //		if (CrossPlatformInputManager.GetAxis ("Vertical") > .25 && Grounded()) {
 			SoundManage.instance.PlaySingle (jump);
-			rb.AddForce (new Vector2(0, jumpForce));
+			rb.AddForce (new Vector2 (0, jumpForce));
 
 		}
-
-
-
-
 	}
+			
 
 	public void Respawn () {
 

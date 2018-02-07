@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class TriggerMoves : MonoBehaviour {
 
-//	public float speed;
 	public Transform a, b;
 	[Range(0, 1)]
 	public float speed = 1;
+
 
 	void Update () {
 		if (Switch.triggered) {
